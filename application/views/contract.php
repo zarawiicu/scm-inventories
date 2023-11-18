@@ -31,7 +31,7 @@
  								<th>Id</th>
  								<th>Nama Clien</th>
  								<th>Tanggal mulai</th>
- 								<th>Tanggal selesai</th>
+ 								<th>Tanggal Akhir</th>
  								<th>File</th>
  								<th>Actions</th>
  							</tr>

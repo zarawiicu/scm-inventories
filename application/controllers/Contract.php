@@ -22,8 +22,8 @@ class Contract extends CI_Controller
 			$row[] = $no;
 			$row[] = $item->id;
 			$row[] = $item->nama_clien;
-			$row[] = $item->tgl_masuk;
-			$row[] = $item->tgl_keluar;
+			$row[] = $item->tgl_mulai;
+			$row[] = $item->tgl_akhir;
 			$row[] = $item->file;
 			$row[] = '
 				<a href="#" class="btn btn-sm" onclick="get_kode('."'".$item->id."', 'view'".')"><i class="ti ti-eye"></i></a>

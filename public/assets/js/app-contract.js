@@ -170,7 +170,7 @@ function get_kode(id, type) {
 				$('[name="id"]').val(response.id);
 				$('[name="nama_clien"]').val(response.nama_clien);
 				$('[name="tgl_mulai"]').val(response.tgl_mulai);
-				$('[name="tgl_akhir"]').val(response.tgl_akkhir);
+				$('[name="tgl_akhir"]').val(response.tgl_akhir);
 				$('[name="file"]').val(response.file);
 
 				modal.modal('show');
@@ -193,7 +193,7 @@ function get_kode(id, type) {
 				$('[name="id"]').val(response.id);
 				$('[name="nama_clien"]').val(response.nama_clien);
 				$('[name="tgl_mulai"]').val(response.tgl_mulai);
-				$('[name="tgl_akhir"]').val(response.tgl_akkhir);
+				$('[name="tgl_akhir"]').val(response.tgl_akhir);
 				$('[name="file"]').val(response.file);
 
 				view.modal('show');
