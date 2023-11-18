@@ -1,0 +1,25 @@
+{
+  "name": "appsens-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "minify-all": "node minify.mjs",
+    "build": "node minify.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solusi-cipta-media/appsens.id.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solusi-cipta-media/appsens.id/issues"
+  },
+  "homepage": "https://github.com/solusi-cipta-media/appsens.id#readme",
+  "dependencies": {
+    "log-symbols": "^5.1.0",
+    "minify": "^8.0.3"
+  }
+}

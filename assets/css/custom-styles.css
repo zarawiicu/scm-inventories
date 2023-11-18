@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+	box-sizing: border-box;
+	font-family: 'Manrope', sans-serif;
+}
+
+body{
+	background-color: white;
+}
+
+.template-customizer-misc {
+	display: none !important;
+}
+
+.error-input {
+	border: 1px solid #ea5455 !important;
+}
+
+.header{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 78px;
+	padding: 8px 16px 0px 16px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+
+.header ul{
+	margin-left: 400px;
+}
+
+.header ul li{
+	padding: 20px;
+	color: var(--text-navy, #343F52);
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: 0.027px;
+}
+
+.header ul li:hover{
+	color: #5d596c !important;
+}
+
+.banner{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	align-self: stretch;
+	border-radius: 24px;
+	padding:50px;
+	background: #F6F7F9;
+}
+
+.banner .h1{
+	color: var(--text-navy, #343F52);
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 58px; /* 120.833% */
+	letter-spacing: 0.077px;
+	text-transform: capitalize;
+}
+
+.pagination{
+	display: flex;
+	justify-content: center;
+	margin-top:80px;
+	margin-bottom: 120px;
+}
+
+.title{
+	background-color: white;
+	display: flex;
+	margin-top: 120px;
+	margin-bottom: 60px;
+}
+
+.left{
+	margin-left: 200px;
+	flex: 1;
+}
+
+.right{
+	margin-left: 950px;
+	flex: 2;
+}
+
+.list{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	margin-left:  150px; 
+	gap: 40px;
+	background-color: white;
+}
+
+.footer{
+	background-color: #F6F7F9;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.foot{
+	display: flex;
+	width: 33.3%;
+	padding: 80px 100px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.foot svg{
+	width: 48px;
+	height: 48px;
+}
+
+.foot h4{
+	color: var(--text-navy, #343F52);
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 28px; /* 147.368% */
+	letter-spacing: 0.03px;
+}
+
+.foot p{
+	color: var(--text-primary, #60697B);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 27px; /* 168.75% */
+}
+
+.foot2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-top: .1rem solid gray;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+.box{
+	width:25%;
+	flex-wrap: wrap;
+	padding: 80px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.box p{
+	color: var(--text-primary, #60697B);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 27px;
+}
+
+
+.text-right
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 15%;
+}
+
+.text-right p{
+	font-size: 20px;
+	letter-spacing: 0.03px;
+	line-height: 25px;
+}
+
+.add-blog
+{
+	border-radius: 50%;
+	width:50%;
+}
+
+body{
+	background-color: #F5F1E9;
+	}
+
+	#calendar{
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+	}
+	#calendar_weekdays div{
+	display:inline-block;
+	vertical-align:top;
+	}
+	#calendar_content, #calendar_weekdays, #calendar_header{
+	position: relative;
+	width: 320px;
+	overflow: hidden;
+	float: left;
+	z-index: 10;
+	}
+	#calendar_weekdays div, #calendar_content div{
+	width:40px;
+	height: 40px;
+	overflow: hidden;
+	text-align: center;
+	background-color: #FFFFFF;
+	color: #787878;
+	}
+	#calendar_content{
+	-webkit-border-radius: 0px 0px 12px 12px;
+	-moz-border-radius: 0px 0px 12px 12px;
+	border-radius: 0px 0px 12px 12px;
+	}
+	#calendar_content div{
+	float: left;
+	}
+	#calendar_content div:hover{
+	background-color: #F8F8F8;
+	}
+	#calendar_content div.blank{
+	background-color: #E8E8E8;
+	}
+	#calendar_header, #calendar_content div.today{
+	zoom: 1;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	}
+	#calendar_content div.today{
+	color: #FFFFFF;
+	}
+	#calendar_header{
+	width: 100%;
+	height: 37px;
+	text-align: center;
+	background-color: #FF6860;
+	padding: 18px 0;
+	-webkit-border-radius: 12px 12px 0px 0px;
+	-moz-border-radius: 12px 12px 0px 0px;
+	border-radius: 12px 12px 0px 0px;
+	}
+	#calendar_header h1{
+	font-size: 1.5em;
+	color: #FFFFFF;
+	float:left;
+	width:70%;
+	}
+	i[class^=icon-chevron]{
+	color: #FFFFFF;
+	float: left;
+	width:15%;
+	border-radius: 50%;
+	}
