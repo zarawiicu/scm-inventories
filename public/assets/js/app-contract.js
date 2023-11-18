@@ -7,6 +7,7 @@ var menyimpan = $('#btnSimpan');
 var view = $('#Viewmodal');
 
 //SweetAlert
+
 var toast_add = (icon, text) => {
 	Swal.fire({
 		icon: 'success',
