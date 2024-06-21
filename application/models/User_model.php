@@ -4,8 +4,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class User_model extends CI_Model
 {
 	var $table = 'user';
-	var $column_order = array('id','nama','username','role');
-	var $order =  array('id','nama','username','role');
+	var $column_order = array('id','nama','username','email','password','no_telp','alamat','role');
+	var $order =  array('id','nama','username','email','password','no_telp','alamat','role');
 
 	private function _get_data_query(){
 		$this->db->from($this->table);
@@ -15,6 +15,9 @@ class User_model extends CI_Model
 			$this->db->like('id', $_POST['search']['value']);
 			$this->db->or_like('nama', $_POST['search']['value']);
 			$this->db->or_like('username', $_POST['search']['value']);
+			$this->db->or_like('email', $_POST['search']['value']);
+			$this->db->or_like('no_telp', $_POST['search']['value']);
+			$this->db->or_like('alamat', $_POST['search']['value']);
 			$this->db->or_like('role', $_POST['search']['value']);
 			
 		}

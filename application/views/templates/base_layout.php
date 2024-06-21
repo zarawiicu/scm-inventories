@@ -1,3 +1,6 @@
+<?php 
+ import_config('my_config')
+?>
 <!DOCTYPE html>
 
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="<?= base_url("public") ?>/assets/" data-template="vertical-menu-template-starter">
@@ -8,7 +11,7 @@
 	<meta name="description" content="" />
 	<title>SCM Inventories</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/x-icon" href="<?= base_url("public") ?>/assets/img/favicon/favicon.ico" />
+	<link rel="shortcut icon" href="<?= base_url("public/assets/img/backgrounds/scm.png") ?>" type="image/x-icon">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -99,7 +102,7 @@
 							<li class="nav-item navbar-dropdown dropdown-user dropdown">
 								<a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
 									<div class="avatar avatar-online">
-										<img src="<?= base_url("public") ?>/assets/img/avatars/5.png" alt class="h-auto rounded-circle" />
+										<img src="<?= base_url("public") ?>/assets/img/avatars/hali1.jpg" alt class="h-auto rounded-circle" />
 									</div>
 								</a>
 								<ul class="dropdown-menu dropdown-menu-end">
@@ -108,12 +111,12 @@
 											<div class="d-flex">
 												<div class="flex-shrink-0 me-3">
 													<div class="avatar avatar-online">
-														<img src="<?= base_url("public") ?>/assets/img/avatars/5.png" alt class="h-auto rounded-circle" />
+														<img src="<?= base_url("public") ?>/assets/img/avatars/hali1.jpg" alt="Profil" class="h-auto rounded-circle" />
 													</div>
 												</div>
 												<div class="flex-grow-1">
-													<span class="fw-semibold d-block">John Doe</span>
-													<small class="text-muted">Admin</small>
+													<span class="fw-semibold d-block"><?= $this->session->userdata('username'); ?></span>
+													<small class="text-muted"><?= $this->session->userdata('role'); ?></small>
 												</div>
 											</div>
 										</a>
@@ -146,7 +149,7 @@
 										<div class="dropdown-divider"></div>
 									</li>
 									<li>
-										<a class="dropdown-item" href="<?= base_url("auth/logout") ?>">
+										<a class="dropdown-item" href="<?= base_url("login/logout") ?>">
 											<i class="ti ti-logout me-2 ti-sm"></i>
 											<span class="align-middle">Log Out</span>
 										</a>

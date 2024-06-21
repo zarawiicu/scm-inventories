@@ -1,5 +1,5 @@
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="<?= base_url("public") ?>/assets/img/favicon/favicon.ico" />
+<link rel="shortcut icon" href="<?= base_url("public/assets/img/backgrounds/scm.png") ?>" type="image/x-icon">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,13 +27,10 @@
 
 <!-- Helpers -->
 <script src="<?= base_url("public") ?>/assets/vendor/js/helpers.js"></script>
-<!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-<!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
 <script src="<?= base_url("public") ?>/assets/vendor/js/template-customizer.js"></script>
-<!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
 <!-- <script src="< base_url("public") ?>/assets/js/front-config.js"></script> -->
 
-<section class="footer">
+<section class="footer" style="width:100%">
 	<div class="foot">
 		<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
 			<path opacity="0.2" d="M14.7564 31.3128C12.9706 29.9243 11.5243 28.1475 10.527 26.1172C9.5297 24.0868 9.00757 21.8561 9.00016 19.5941C8.96266 11.4566 15.5064 4.68781 23.6439 4.50031C26.7933 4.42565 29.8862 5.34444 32.4841 7.12637C35.0819 8.9083 37.0528 11.4629 38.1172 14.4279C39.1816 17.3929 39.2855 20.6177 38.4142 23.6451C37.5428 26.6724 35.7404 29.3486 33.2627 31.2941C32.7153 31.7171 32.272 32.2598 31.9665 32.8805C31.661 33.5012 31.5015 34.1835 31.5002 34.8753V36.0003C31.5002 36.3981 31.3421 36.7797 31.0608 37.061C30.7795 37.3423 30.398 37.5003 30.0002 37.5003H18.0002C17.6023 37.5003 17.2208 37.3423 16.9395 37.061C16.6582 36.7797 16.5002 36.3981 16.5002 36.0003V34.8753C16.4955 34.1887 16.3363 33.512 16.0344 32.8953C15.7326 32.2786 15.2958 31.7377 14.7564 31.3128Z" fill="#3A42F3" />

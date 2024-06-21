@@ -23,7 +23,10 @@ class User extends CI_Controller
 			$row[] = $item->id;
 			$row[] = $item->nama;
 			$row[] = $item->username;
+			$row[] = $item->email;
 			$row[] = $item->password;
+			$row[] = $item->no_telp;
+			$row[] = $item->alamat;
 			$row[] = $item->role;
 			$row[] = '
 				<a href="#" class="btn btn-sm" onclick="get_kode('."'".$item->id."', 'view'".')"><i class="ti ti-eye"></i></a>
@@ -47,12 +50,11 @@ class User extends CI_Controller
 	public function create(){
 		$this->_validation();
 		$data = [
-			'id' => htmlspecialchars($this->input->post('id')),
 			'nama' => htmlspecialchars($this->input->post('nama')),
 			'username' => htmlspecialchars($this->input->post('username')),
 			'email' => htmlspecialchars($this->input->post('email')),
 			'password' => htmlspecialchars($this->input->post('password')),
-			'notelp' => htmlspecialchars($this->input->post('notelp')),
+			'no_telp' => htmlspecialchars($this->input->post('no_telp')),
 			'alamat' => htmlspecialchars($this->input->post('alamat')),
 			'role' => htmlspecialchars($this->input->post('role')),
 		];
@@ -75,12 +77,11 @@ class User extends CI_Controller
 	public function update(){
 		$this->_validation();
 		$data = [
-			'id' => htmlspecialchars($this->input->post('id')),
 			'nama' => htmlspecialchars($this->input->post('nama')),
 			'username' => htmlspecialchars($this->input->post('username')),
 			'email' => htmlspecialchars($this->input->post('email')),
 			'password' => htmlspecialchars($this->input->post('password')),
-			'notelp' => htmlspecialchars($this->input->post('notelp')),
+			'no_telp' => htmlspecialchars($this->input->post('no_telp')),
 			'alamat' => htmlspecialchars($this->input->post('alamat')),
 			'role' => htmlspecialchars($this->input->post('role')),
 		];
@@ -108,39 +109,39 @@ class User extends CI_Controller
 		$data['inputerror'] = array();
 		$data['status'] = true;
 
-		if($this->input->post('id') == ''){
-			$data['inputerror'][] = 'id';
-			$data['error_string'][] = 'Kode Produksi harap diisi';
-			$data['status'] = false;
-		}
-
 		if($this->input->post('nama') == ''){
 			$data['inputerror'][] = 'nama';
-			$data['error_string'][] = 'Nama Produk harap diisi';
+			$data['error_string'][] = 'Nama User harap diisi';
 			$data['status'] = false;
 		}
 
-		if($this->input->post('deskripsi') == ''){
-			$data['inputerror'][] = 'deskripsi';
-			$data['error_string'][] = 'Deskripsi Produk harap diisi';
+		if($this->input->post('username') == ''){
+			$data['inputerror'][] = 'username';
+			$data['error_string'][] = 'Username harap diisi';
 			$data['status'] = false;
 		}
 
-		if($this->input->post('tgl_prod') == ''){
-			$data['inputerror'][] = 'tgl_prod';
-			$data['error_string'][] = 'Tanggal Produksi harap diisi';
+		if($this->input->post('password') == ''){
+			$data['inputerror'][] = 'password';
+			$data['error_string'][] = 'Password harap diisi';
 			$data['status'] = false;
 		}
 
-		if($this->input->post('harga') == ''){
-			$data['inputerror'][] = 'harga';
-			$data['error_string'][] = 'Deskripsi Produk harap diisi';
+		if($this->input->post('no_telp') == ''){
+			$data['inputerror'][] = 'no_telp';
+			$data['error_string'][] = 'Nomor telepon harap diisi';
 			$data['status'] = false;
 		}
 
-		if($this->input->post('link') == ''){
-			$data['inputerror'][] = 'link';
-			$data['error_string'][] = 'Harap mengisi Link';
+		if($this->input->post('alamat') == ''){
+			$data['inputerror'][] = 'alamat';
+			$data['error_string'][] = 'Alamat harap diisi';
+			$data['status'] = false;
+		}
+
+		if($this->input->post('role') == ''){
+			$data['inputerror'][] = 'role';
+			$data['error_string'][] = 'Role User harap diisi';
 			$data['status'] = false;
 		}
 

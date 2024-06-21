@@ -44,21 +44,9 @@
 			<span class="menu-header-text">Projek</span>
 
 		<li class="menu-item">
-      <a href="#/flow" class="menu-link">
-        <i class="menu-icon tf-icons ti ti-chart-bubble"></i>
-        <div data-i18n="Flow">Flow</div>
-      </a>
-    </li>
-		<li class="menu-item">
       <a href="#/data" class="menu-link">
         <i class="menu-icon tf-icons ti ti-license"></i>
         <div data-i18n="Data">Data</div>
-      </a>
-    </li>
-		<li class="menu-item">
-      <a href="#/contract" class="menu-link">
-        <i class="menu-icon tf-icons fa fa-dumpster-fire"></i>
-        <div data-i18n="Kontrak" style="padding-left: 5px">Kontrak</div>
       </a>
     </li>
 		</li>

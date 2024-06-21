@@ -170,7 +170,7 @@ function get_kode(id, type) {
 				$('[name="username"]').val(response.username);
 				$('[name="email"]').val(response.email);
 				$('[name="password"]').val(response.password);
-				$('[name="notelp"]').val(response.notelp);
+				$('[name="no_telp]').val(response.notelp);
 				$('[name="alamat"]').val(response.alamat);
 				$('[name="role"]').val(response.role);
 
@@ -196,7 +196,7 @@ function get_kode(id, type) {
 				$('[name="username"]').val(response.username);
 				$('[name="email"]').val(response.email);
 				$('[name="password"]').val(response.password);
-				$('[name="notelp"]').val(response.notelp);
+				$('[name="no_telp]').val(response.notelp);
 				$('[name="alamat"]').val(response.alamat);
 				$('[name="role"]').val(response.role);
 				view.modal('show');

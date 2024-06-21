@@ -1,5 +1,5 @@
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="<?= base_url("public") ?>/assets/img/favicon/favicon.ico" />
+<link rel="shortcut icon" href="<?= base_url("public/assets/img/backgrounds/scm.png") ?>" type="image/x-icon">>
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,133 +27,134 @@
 
 <!-- Helpers -->
 <script src="<?= base_url("public") ?>/assets/vendor/js/helpers.js"></script>
-<!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-<!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
 <script src="<?= base_url("public") ?>/assets/vendor/js/template-customizer.js"></script>
-<!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
 <!-- <script src="< base_url("public") ?>/assets/js/front-config.js"></script> -->
 
-<!-- Navbar: Start -->
+<!-- Navbar Start -->
 <nav class="header">
-			<div class="navbar navbar-expand-lg landing-navbar px-3 px-lg-4">
-				<!-- Menu logo wrapper: Start -->
-				<div class="navbar-brand app-brand d d-flex py-0 py-lg-2 me-4">
-					<!-- Mobile menu toggle: Start-->
-					<button class="navbar-toggler border-0 px-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<i class="ti ti-menu-2 ti-sm align-middle"></i>
-					</button>
+	<div class="navbar navbar-expand-lg landing-navbar px-3 px-lg-4">
+		<!-- Menu Logo Start -->
+		<div class="navbar-brand app-brand d d-flex py-0 py-lg-2 me-4">
+			<!-- Mobile Menu Toggle Start-->
+			<button class="navbar-toggler border-0 px-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="ti ti-menu-2 ti-sm align-middle"></i>
+			</button>
 
-					<!-- Mobile menu toggle: End-->
-					<a href="index" class="app-brand-link">
-						<span class="app-brand-logo">
-							<img src="<?= base_url("public/assets/img/backgrounds/scm.png") ?>" alt="logo" style="width:100px;height:30px;">
-						</span>
-					</a>
-				</div>
 
-				<!-- Menu logo wrapper: End -->
-				<!-- Menu wrapper: Start -->
-				<div class="collapse navbar-collapse landing-nav-menu justify-content-between" id="navbarSupportedContent">
-					<button class="navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<i class="ti ti-x ti-sm"></i>
-					</button>
-					<ul class="navbar-nav me-auto">
-						<li class="nav-item">
-							<a class="nav-link fw-medium align-items-center" aria-current="page" href="">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link fw-medium align-items-center" href="">About Us</a>
-						</li>
-						<li class="nav-item mega-dropdown">
-							<a href="javascript:void(0);" class="nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium align-items-center" aria-expanded="false" data-bs-toggle="mega-dropdown" data-trigger="hover">
-								<span data-i18n="Pages">Services</span>
-							</a>
-							<div class="dropdown-menu p-4">
-								<div class="row gy-4">
-									<div class="col-12 col-lg">
-										<div class="h6 d-flex align-items-center mb-2 mb-lg-3">
-											<div class="avatar avatar-sm flex-shrink-0 me-2">
-												<span class="avatar-initial rounded bg-label-primary"><i class='ti ti-layout-grid'></i></span>
-											</div>
-											<span class="ps-1">Other</span>
-										</div>
-										<ul class="nav flex-column">
-											<li class="nav-item">
-												<a class="nav-link mega-dropdown-link" href="pricing-page.html">
-													<i class='ti ti-circle me-1'></i>
-													<span data-i18n="Pricing">Pricing</span>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link mega-dropdown-link" href="payment-page.html">
-													<i class='ti ti-circle me-1'></i>
-													<span data-i18n="Payment">Payment</span>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link mega-dropdown-link" href="checkout-page.html">
-													<i class='ti ti-circle me-1'></i>
-													<span data-i18n="Checkout">Checkout</span>
-												</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link mega-dropdown-link" href="help-center-landing.html">
-													<i class='ti ti-circle me-1'></i>
-													<span data-i18n="Help Center">Help Center</span>
-												</a>
-											</li>
-										</ul>
-						<li class="nav-item">
-							<a class="nav-link fw-medium align-items-center" aria-current="page" href="">Portofolio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link fw-medium align-items-center" href="">Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link fw-medium align-items-center" aria-current="page" href="">Contact Us</a>
-						</li>
-				</div>
+			<a href="index" class="app-brand-link">
+				<span class="app-brand-logo">
+					<img src="<?= base_url("public/assets/img/backgrounds/scm.png") ?>" alt="logo" style="width:100px;height:30px;">
+				</span>
+			</a>
+		</div>
 
+		<div class="collapse navbar-collapse landing-nav-menu justify-content-between" id="navbarSupportedContent">
+			<button class="navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="ti ti-x ti-sm"></i>
+			</button>
+			<ul class="navbar-nav me-auto" style="margin: 20px!important;margin-left:45%!important;">
+				<li class="nav-item">
+					<a class="nav-link fw-medium align-items-center" aria-current="page" href="index">Home</a>
 				</li>
-				</ul>
-			</div>
-			<!-- <div class="landing-menu-overlay d-lg-none"></div> -->
-
-			<!-- navbar button: Start -->
-			<div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-				<div class="navbar-nav flex-row align-items-center">
-					<a class="btn btn-outline-dark" href="<?= base_url('auth/index') ?>" target="_blank">
-						Login
+				<li class="nav-item">
+					<a class="nav-link fw-medium align-items-center" href="about_us">About Us</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Product
 					</a>
-				</div>
-
-				<div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-					<div class="navbar-nav flex-row align-items-center" style="margin-left:5%; margin-right:200px;">
-						<a class="btn btn-dark" href="<?= base_url('auth/register') ?>">
-							Register
+					<ul class="dropdown-menu" style="height: 350px!important; margin:5px!important;padding:5px!important;gap:5px;">
+						<li><a class="dropdown-item" href="prod_app">Aplikasi</a></li>
+						<li><a class="dropdown-item" href="prod_blog">Blog</a></li>
+						
+							<hr class="dropdown-divider">
+						
+						<li><a class="dropdown-item" href="#">Lainnya</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link fw-medium align-items-center" aria-current="page" href="portofolio">Portofolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link fw-medium align-items-center" aria-current="page" href="contact_us">Contact Us</a>
+				</li>
+				<ul class="navbar-nav flex-row align-items-center ms-auto" style="width: 100px!important;">
+					<!-- User -->
+					<li class="nav-item navbar-dropdown dropdown-user dropdown">
+						<a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+							<div class="avatar avatar-online">
+								<img src="<?= base_url("public") ?>/assets/img/avatars/hali1.jpg" alt class="h-auto rounded-circle" />
+							</div>
 						</a>
-					</div>
-					<!-- navbar button: End -->
-				</div>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li>
+								<a class="dropdown-item" href="#">
+									<div class="d-flex">
+										<div class="flex-shrink-0 me-3">
+											<div class="avatar avatar-online">
+												<img src="<?= base_url("public") ?>/assets/img/avatars/hali1.jpg" alt="Profil" class="h-auto rounded-circle" />
+											</div>
+										</div>
+										<div class="flex-grow-1">
+											<span class="fw-semibold d-block"><?= $this->session->userdata('username'); ?></span>
+											<small class="text-muted"><?= $this->session->userdata('role'); ?></small>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="dropdown-divider"></div>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">
+									<i class="ti ti-user-check me-2 ti-sm"></i>
+									<span class="align-middle">My Profile</span>
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">
+									<i class="ti ti-settings me-2 ti-sm"></i>
+									<span class="align-middle">Settings</span>
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">
+									<span class="d-flex align-items-center align-middle">
+										<i class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"></i>
+										<span class="flex-grow-1 align-middle">Billing</span>
+										<span class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20">2</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<div class="dropdown-divider"></div>
+							</li>
+							<li>
+								<a class="dropdown-item" href="<?= base_url("login/logout") ?>">
+									<i class="ti ti-logout me-2 ti-sm"></i>
+									<span class="align-middle">Log Out</span>
+								</a>
+							</li>
+						</ul>
+				</ul>
+		</div>
 
-		</nav>
-		<!-- Navbar: End -->
+		</li>
+		</ul>
+	</div>
 
-		<!-- Core JS -->
-		<!-- build:js assets/vendor/js/core.js -->
-		<script src="<?= base_url("public") ?>/assets/vendor/libs/popper/popper.js"></script>
-		<script src="<?= base_url("public") ?>/assets/vendor/js/bootstrap.js"></script>
-		<script src="<?= base_url("public") ?>/assets/vendor/libs/node-waves/node-waves.js"></script>
+</nav>
+<!-- Navbar: End -->
 
-		<!-- endbuild -->
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="<?= base_url("public") ?>/assets/vendor/libs/popper/popper.js"></script>
+<script src="<?= base_url("public") ?>/assets/vendor/js/bootstrap.js"></script>
+<script src="<?= base_url("public") ?>/assets/vendor/libs/node-waves/node-waves.js"></script>
 
-		<!-- Vendors JS -->
-		<script src="<?= base_url("public") ?>/assets/vendor/libs/nouislider/nouislider.js"></script>
-		<script src="<?= base_url("public") ?>/assets/vendor/libs/swiper/swiper.js"></script>
-		<script src="<?= base_url("public") ?>/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
-		<!-- Main JS -->
-		<!-- <script src="< base_url("public") ?>/assets/js/front-main.js"></script> -->
+<!-- endbuild -->
 
-
-		<!-- Page JS -->
-		<!-- <script src="< base_url("public") ?>/assets/js/front-page-landing.js"></script> -->
+<!-- Vendors JS -->
+<script src="<?= base_url("public") ?>/assets/vendor/libs/nouislider/nouislider.js"></script>
+<script src="<?= base_url("public") ?>/assets/vendor/libs/swiper/swiper.js"></script>
+<script src="<?= base_url("public") ?>/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
